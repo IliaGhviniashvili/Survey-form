@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <section class="section1">
+        <form method="POST" action="" id="registrationForm" class="form1">
+            <div>
+                <input type="text" class="inputclass" name="userName" id="userName" placeholder="UserName.."/>
+                <input type="checkbox" id="save">
+                <label for="save">Save my Name</label>
+                <span class="error-text" id="error_userName"></span>
+            </div>
+            <div>
+                <input type="email" class="inputclass" id="email" name="email" placeholder="Email..">
+                <span id="emailspan"></span>
+            </div>
+            <div>
+                <input type="password" class="inputclass" name="password1" id="password1" placeholder="password.."/>
+                <i id="toggleicon" class="fa-solid fa-eye"></i>
+                <span class="error-text" id="error_password1"></span>
+            </div>
+            <div>
+                <input type="password" class="inputclass" name="password2" id="password2" placeholder="repeate password"/>
+                <span class="error-text" id="error_password2"></span>
+            </div>
+            <div>
+                <input type="radio" name="userAge" id="age1" class="age"/>
+                <label for="age1">18-30</label>
+                <input type="radio" name="userAge" id="age2" class="age"/>
+                <label for="age2">31-50</label>
+                <input type="radio" name="userAge" id="age3" class="age"/>
+                <label for="age3">51-90</label>
+                <input type="radio" name="userAge" id="age4" class="age"/>
+                <label for="age4">>90</label> 
+                <label for="userAge" class="radioclass">Select your age</label>
+                <span class="error-text" id="error_userAge"></span>
+            </div>
+            <div>
+                <input type="checkbox" name="agree" id="agree"/>
+                <label for="agree">I Agree Terms and Conditions</label>
+                <span class="error-text" id="error_agree"></span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="numberdiv">
+        <label for="usercounter" class="userlabel">You have visited</label>
+        <div id="usercounter" class="usercounter"></div>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
